@@ -1,0 +1,241 @@
+.start_evaluation_container{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100% ; /*   corregir el tamaño en las queryes    */
+    padding: 100px;
+    background-color: #F2F2F0;
+}
+.evaluation_container{
+    background-color: #F2F2F0;
+    padding: 60px 300px 20px 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 30px #BFBFBF;
+}
+.container_data_user{
+    background-color: #BFBFBF;
+    padding: 10px;
+    height: 90%;
+    width: 30%;
+}
+.separate_text{
+    border-bottom:3px solid #F2F2F0;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.separate_text h2,p{
+    text-align: center;
+}
+.separate_text h2 {
+    font-size: 30px;
+}
+.separate_text p{
+    font-size: 18px;
+}
+.form_create{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+.input_create{
+    margin: 10px;
+}
+.califications{
+    background-color: rgb(19, 14, 24);
+    width: 100px;
+    height: 504px;
+}
+.nota{
+    background-color: #D9C091;
+    height: 13.08%;
+    width: 98px;
+    margin: 1px;
+    transition: width 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.nota.final{
+    background-color: #455159;
+    height: 20%;
+    padding-top: 40px;
+}
+.nota.final h3, h5{
+    color: white;
+}
+.nota h5{
+    display: none;
+    opacity: 0;
+    font-size: 10px;
+    transition: opacity 2s ease-in-out;
+}
+.nota:hover h5{
+    display: inline-block;
+    opacity: 1;
+}
+.nota:hover{
+    cursor: pointer;
+    width: 220px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.input_create{
+    display: flex;
+    justify-content: center;
+}
+.input_control_c{
+    margin: 5px 40px;
+    transform: scale(1.3);
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+}
+.input_control_c:hover{
+    cursor: pointer;
+}
+.input_control_c:focus{
+    outline: none;
+}
+
+.create_btn{
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.create_btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+@media(max-width:1600px){
+    .evaluation_container{
+        padding: 60px 30px;
+    }
+    .separate_text h2 {
+        font-size: 20px;
+    }
+    .separate_text p{
+        font-size: 15px;
+    }
+    .input_control_c{
+        margin: 5px 20px;
+        transform: scale(1);
+        border: none;
+        padding: 7px;
+        border-radius: 3px;
+    }
+    .califications{
+        width: 100px;
+        height: 468px;
+    }
+    
+}
+@media(max-width:1000px){
+    .evaluation_container{
+        padding: 10px 200px 20px 200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .container_data_user{
+        padding: 10px;
+        height: 80%;
+        width: 100%;
+    }
+    .nota:hover{
+        padding-top: 30px;
+    }
+    .nota.final{
+        padding-top: 40px;
+    }
+    .califications{
+        display: flex;
+        width: 100%;
+        height: 80px;
+    }
+    .nota{
+        height: 78px;
+        width: 13%;
+        margin: 1px;
+        transition: width 0.3s ease-in-out;
+    }
+    .nota.final{
+        width: 20%;
+        height: 78px;
+    }
+    .nota:hover{
+        cursor: pointer;
+        width: 220px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+@media(max-width: 840px){
+    .evaluation_container{
+        padding: 10px 150px 20px 150px;
+    }
+    .nota.final{
+        padding-top: 20px;
+    }
+}
+@media(max-width: 900px){
+    .evaluation_container{
+        padding: 10px 100px 20px 100px;
+    }
+}
+@media(max-width: 650px){
+    .evaluation_container{
+        padding: 10px 20px 20px 20px;
+    }
+}
+@media(max-width:413px){
+    .start_evaluation_container{
+        padding: 100px 10px 10px;
+    }
+    .evaluation_container{
+        padding: 5px;
+    }
+    .container_data_user{
+        padding: 5px;
+    }
+    .separate_text{
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+    .separate_text h2{
+        font-size: 20px;
+    }
+    .separate_text p{
+        font-size: 12px;
+    }
+    .input_create{
+        margin: 2px;
+    }
+    .input_control_c{
+        font-size: 12px;
+        width: 150px;
+    }
+    .create_btn{
+        font-size: 12px;
+        padding: 8px;
+        margin: 0 auto;
+    }
+    .califications h3{
+        font-size: 12px;
+    }
+    .califications h5{
+        font-size: 10px;
+        font-weight: 300;
+    }
+}

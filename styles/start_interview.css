@@ -1,0 +1,152 @@
+.start_interview_container{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100% ; /*   corregir el tamaño en las queryes    */
+    padding: 150px;
+    background-color: #F2F2F0;
+}
+.get_data_container{
+    background-color: #F2F2F0;
+    padding: 60px 300px 20px 300px;
+    height: 95%;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 30px #BFBFBF;
+}
+.get_data_container h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.get_data_container p{
+    text-align: center;
+    font-size: 17px;
+    margin: 20px;   
+}
+.form_data{
+    display: flex;
+    justify-content: center;
+}
+.input_data{
+    margin: 5px ; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.input_control{
+    margin: 5px 40px;
+    transform: scale(1.3);
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+}
+.input_control:hover{
+    cursor: pointer;
+}
+.input_control:focus{
+    outline: none;
+}
+.send_btn{
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.send_btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.bx.bx-chevrons-left{
+    font-size: 40px;
+}
+.bx.bx-chevrons-left:hover{
+    cursor: pointer;
+    color: white;
+}
+@media(max-width:1396px){
+    .start_interview_container{
+        padding: 150px 100px 4px 100px;
+    }
+    .get_data_container{
+        padding: 60px;
+        padding-top: 80px;
+        height: 85%;
+    }
+    .input_data{
+        padding: 5px;
+    }
+    .input_control{
+        margin: 5px 2px;
+        transform: scale(1);
+    }
+}
+@media(max-width:670px){
+    .get_data_container{
+        padding: 80px 30px;
+        height: 85%;
+    }
+    .get_data_container h2{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .get_data_container p{
+        margin: 15px;
+    }
+    .input_data{
+        padding: 3px;
+    }
+    .input_control{
+        margin: 5px 2px;
+        transform: scale(1);
+    }
+    .send_btn{
+        margin: 5px auto;
+    }
+}
+@media(max-width:413px){
+    .get_data_container{
+        padding: 50px 10px;
+    }
+    .get_data_container p{
+        font-size: 12px;
+    }
+    .get_data_container h2{
+        font-size: 20px;
+    }
+    .start_interview_container{
+        padding: 100px 30px 10px;
+    }
+    .form_data{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input_data{
+        margin: 0;
+        font-size: 10px;
+    }
+    .input_control{
+        margin: 1px;
+        transform: scale(1);
+        border: none;
+        padding: 5px;
+        font-size: 10px;
+        width: 100px;
+    }
+    .send_btn{
+        margin: 5px auto;
+        padding: 8px;
+        font-size: 10px;
+    }
+    .bx.bx-chevrons-left{
+        font-size: 20px;
+    }
+    .bx.bx.bx-chevrons-right{
+        font-size: 20px;
+    }
+}

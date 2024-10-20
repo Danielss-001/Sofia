@@ -1,0 +1,132 @@
+.nav_container{
+    z-index: 10000;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 20px 300px;
+    justify-content: space-between;
+    background-color: #455159;
+}
+.logo{
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+.logo h1{
+    padding-left: 10px;
+}
+.logo i{
+    font-size: 30px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.ul_menu{
+    display: flex;
+    
+}
+.ul_menu li{
+    cursor: pointer;
+    padding-left: 40px;
+    list-style: none;
+    text-align: end;
+    color: #D9C091;
+}
+.ul_menu li:hover{
+    color: white;
+}
+.bx.bx-menu{
+    font-size: 40px;
+    color: #D9C091;
+    cursor: pointer;
+    display: none;
+}
+.bx.bx-menu:hover {
+    color: white;
+}
+
+.Footer{
+    position:relative;
+    margin: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: #BFBFBF;
+}
+
+.footer_container h1 {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(94, 94, 94);
+}
+.footer_container h5{
+    font-size: 5px;
+}
+.footer_container h2{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(94, 94, 94);
+}
+
+
+@media(max-width: 1145px){
+    .nav_container{
+        padding: 20px 100px;
+    }
+    .bx.bx-menu{
+        display: block;
+    }
+    .ul_menu{
+        padding-top: 40px;
+        display: none;
+        position: absolute;
+        background-color:#2e3436c2;
+        backdrop-filter: blur(2px); /* Desenfoque del contenido detrás */
+        -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+        width: 200px;
+        right: 0px;
+        top: 70px;
+        height: 100%;
+        transition: ease-in-out .2s display;
+    }
+    /*  Aqui se abre o cierra segun añadir a clase  */
+    .ul_menu.show{
+        display: block;
+        height: 770px;
+    }
+
+    .ul_menu li{
+        text-align: end;
+        padding: 10px 50px;
+    }
+}
+@media(max-width: 650px){
+    .nav_container{
+        padding: 20px 20px;
+    }
+    .logo{
+        justify-content: center;
+        align-items: center;
+    }
+    .logo i{
+        font-size: 24px;
+    }
+    .sofia_tittle_logo{
+        font-size: 15px;
+    }
+    .footer_container h1{
+        font-size: 15px;
+    }
+    .footer_container h2{
+        font-size: 10px;
+    }
+}
+@media(max-width:413px){
+    .ul_menu.show{
+        display: block;
+        height: 570px;
+    }
+}

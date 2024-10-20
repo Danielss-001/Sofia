@@ -1,0 +1,114 @@
+.bridge_container{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100% ; /*   corregir el tamaño en las queryes    */
+    padding: 150px;
+    background-color: #F2F2F0;
+}
+.bridge_data_container{
+    background-color: #F2F2F0;
+    padding: 100px 200px 100px 200px;
+    height: 95%;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 30px #BFBFBF;
+}
+.container_bridge h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+}
+.container_bridge p{
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+}
+.finish_container.bridge{
+    display: flex;
+    width: 100px;
+}
+.interview_btn{
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.interview_btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+@media(max-width:1250px){
+    .bridge_data_container{
+        padding: 70px 100px 100px 100px;
+    }
+}
+@media(max-width:985px){
+    .bridge_data_container{
+        padding: 70px 100px 100px 100px;
+    }
+    .container_bridge p{
+        font-size: 18px;
+    }
+}
+@media(max-width:870px){
+    .bridge_data_container{
+        padding: 50px 30px 100px 30px;
+    }
+    .container_bridge p{
+        margin-bottom: 20px;
+    }
+    .container_bridge h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    
+}
+@media(max-width:670px){
+    .bridge_data_container{
+        padding: 20px 10px 100px 10px;
+    }
+    .container_bridge p{
+        margin-bottom: 20px;
+    }
+    .container_bridge h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    
+}
+
+@media(max-width:413px){
+    .text_data{
+        font-size: 10px;
+    }
+    .bridge_container{
+        padding: 100px 30px 10px;
+    }
+    .bridge_data_container{
+        padding: 80px 30px;
+    }
+    .container_bridge h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .container_bridge p{
+        font-size: 12px;
+    }
+    .interview_btn{
+        margin: 8px auto;
+        padding: 8px;
+        font-size: 10px;
+    }
+    .finish_container.bridge h4{
+        font-size: 12px;
+        transform: translateY(1px);
+    }
+}

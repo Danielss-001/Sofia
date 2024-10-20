@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import './styles/bar_nav.css';
+@import './styles/home.css';
+@import './styles/start_interview.css';
+@import './styles/interview.css';
+@import './styles/evaluation.css';
+@import './styles/user_created.css';
+@import './styles/bridge_interview.css';
+@import './styles/login.css';
+@import './styles/dashboard.css';
+
+/*   Root  */
+*{
+    font-family: "Montserrat", system-ui;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_container{
+    background-color: blue;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.content_pag{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 840px;
+    box-sizing: border-box;
+}
+
+.model_page{
+    position: relative;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1145px){
+    .model_page{
+        height: 840px;
+    }
+    .content_pag{
+        height: 660px;
+    }
+}
+@media(max-width:650px){
+    .model_page{
+        height: 100%;
+    }
+    .content_pag{
+        height: 640px;
+    }
+}
+
+
+
+
